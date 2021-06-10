@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>Home · System Location</title>
+        <title>Levantamento de requisitos · System Location</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 3.6.20">
@@ -11,24 +11,24 @@
         
         
     
-    <link rel="stylesheet" href="gitbook/style.css">
+    <link rel="stylesheet" href="../gitbook/style.css">
 
     
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-richquotes/plugin.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-richquotes/plugin.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
                 
             
         
@@ -56,12 +56,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="business-analysis/introduction.html" />
+    <link rel="next" href="../service-provision.html" />
     
+    
+    <link rel="prev" href="introduction.html" />
     
 
     </head>
@@ -90,9 +92,9 @@
         
         
     
-        <li class="chapter active" data-level="1.1" data-path="./">
+        <li class="chapter " data-level="1.1" data-path="../">
             
-                <a href="./">
+                <a href="../">
             
                     
                     Home
@@ -110,9 +112,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="business-analysis/introduction.html">
+        <li class="chapter " data-level="2.1" data-path="introduction.html">
             
-                <a href="business-analysis/introduction.html">
+                <a href="introduction.html">
             
                     
                     Introdução
@@ -123,9 +125,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2" data-path="business-analysis/requirements-gathering.html">
+        <li class="chapter active" data-level="2.2" data-path="requirements-gathering.html">
             
-                <a href="business-analysis/requirements-gathering.html">
+                <a href="requirements-gathering.html">
             
                     
                     Levantamento de requisitos
@@ -143,9 +145,9 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="service-provision.html">
+        <li class="chapter " data-level="3.1" data-path="../service-provision.html">
             
-                <a href="service-provision.html">
+                <a href="../service-provision.html">
             
                     
                     Prestação de serviço
@@ -199,7 +201,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Home</a>
+        <a href=".." >Levantamento de requisitos</a>
     </h1>
 </div>
 
@@ -214,8 +216,55 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="system-location">System Location</h1>
-<p>O projeto consiste no desenvolvimento de uma aplicação web para gerenciamento de uma imobiliária, operando sobre sua oferta de imóveis, contratos de locação e contabilidade.</p>
+                                <h1 id="levantamento-de-requisitos">Levantamento de requisitos</h1>
+<ul>
+<li><p>A aplicação deve ser acessivel todo o tempo, de qualquer lugar através da web, mantendo persistência de dados indefinidamente</p>
+</li>
+<li><p>Deve ser possível gerenciar o cadastro de <strong>Pessoas</strong>: \
+  Permissão: Operador \
+  Campos:</p>
+<ul>
+<li><strong>Nome</strong> - <em>Texto</em></li>
+<li><strong>CPF/CNPJ</strong>: <em>Código</em></li>
+<li><strong>Tipo</strong>: <em>[Física, Júridica]</em></li>
+<li><strong>Contato(s)</strong></li>
+<li>Documento(s)</li>
+<li><strong>Endereço</strong></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>Deve ser possível gerenciar o cadastro de <strong>Imóvies</strong> \
+  Permissão: Operador \
+  Campos:<ul>
+<li><strong>Propietário</strong>: <em>Pessoa</em></li>
+<li><strong>Tipo</strong></li>
+<li><strong>Endereço</strong></li>
+<li><strong>Atributo(s)</strong></li>
+<li>Documento(s)</li>
+<li>Custo(s)</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>Deve ser possível gerenciar o cadastro de <strong>Contratos</strong> \
+  Permissão: Operador \</p>
+<ul>
+<li>Campos:</li>
+<li>Situação: <em>[Negociação, Assinado]</em></li>
+<li>Imóvel</li>
+<li>Locatátio(s): <em>Pessoa</em></li>
+<li>Fiador(es): <em>Pessoa</em></li>
+<li><p>Imobiliária: <em>Pessoa</em></p>
+</li>
+<li><p>Um <strong>Contrato</strong> estabelece uma relação de responsabilidade (dívida) sob cada custo associado ao <strong>Imóvel</strong> locado</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>...</p>
+<h2 id="modelo-conceitual">Modelo conceitual</h2>
+<p><img src="img/conceptual_model.png" alt="Modelo Coinceitual"></p>
 
                                 
                                 </section>
@@ -243,8 +292,12 @@
 
             
                 
+                <a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page: Introdução">
+                    <i class="fa fa-angle-left"></i>
+                </a>
                 
-                <a href="business-analysis/introduction.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Introdução">
+                
+                <a href="../service-provision.html" class="navigation navigation-next " aria-label="Next page: Prestação de serviço">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -255,7 +308,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Home","level":"1.1","depth":1,"next":{"title":"Introdução","level":"2.1","depth":1,"path":"business-analysis/introduction.md","ref":"business-analysis/introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github@2.0.0","richquotes"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/Megam-imobiliaria/system-location"},"richquotes":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"github":"https://github.com/artu-hnrq","theme":"default","author":"Arthur Henrique","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"HOME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"System Location","gitbook":">=3.2.0","description":"O projeto consiste no desenvolvimento de uma aplicação web para gerenciamento de uma imobiliária, operando sobre sua oferta de imóveis, contratos de locação e contabilidade."},"file":{"path":"HOME.md","mtime":"2021-06-10T12:54:56.627Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-06-10T12:55:08.611Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Levantamento de requisitos","level":"2.2","depth":1,"next":{"title":"Prestação de serviço","level":"3.1","depth":1,"path":"service-provision.md","ref":"service-provision.md","articles":[]},"previous":{"title":"Introdução","level":"2.1","depth":1,"path":"business-analysis/introduction.md","ref":"business-analysis/introduction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["github@2.0.0","richquotes"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/Megam-imobiliaria/system-location"},"richquotes":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"github":"https://github.com/artu-hnrq","theme":"default","author":"Arthur Henrique","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"HOME.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"System Location","gitbook":">=3.2.0","description":"O projeto consiste no desenvolvimento de uma aplicação web para gerenciamento de uma imobiliária, operando sobre sua oferta de imóveis, contratos de locação e contabilidade."},"file":{"path":"business-analysis/requirements-gathering.md","mtime":"2021-06-10T12:54:56.627Z","type":"markdown"},"gitbook":{"version":"3.6.20","time":"2021-06-10T12:55:08.611Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -305,31 +358,31 @@
             book.classList.remove("honkit-cloak");
         }
     </script>
-    <script src="gitbook/gitbook.js"></script>
-    <script src="gitbook/theme.js"></script>
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
     
         
-        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
-        
-    
-        
-        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
         
     
         
-        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
 
