@@ -4,8 +4,9 @@
         "readme": "HOME.md"
     },
 
-    "title": "Gitbook static site at Github Pages",
-    "description": "This Gitbook was built through Github Actions automation from [this repository][github]",
+    "title": "System Location",
+    "description": "O projeto consiste no desenvolvimento de uma aplicação web para gerenciamento de uma imobiliária, operando sobre sua oferta de imóveis, contratos de locação e contabilidade.",
+
     "author": "Arthur Henrique",
     "github": "https://github.com/artu-hnrq",
 
@@ -14,11 +15,11 @@
     },
 
     "plugins": [
-        "github@2.0.0"
+        "github@2.0.0", "richquotes"
     ],
     "pluginsConfig": {
         "github": {
-            "url": "https://github.com/generic-tree/gitbook"
+            "url": "https://github.com/Megam-imobiliaria/system-location"
         }
     },
     "gitbook": ">=3.2.0"
